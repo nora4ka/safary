@@ -1,0 +1,235 @@
+       
+       
+       @font-face {
+            font-family: 'Font1';
+            src: url('fonts/kankin.ttf');
+        }
+        @font-face {
+            font-family: 'Font2';
+            src: url('fonts/NexaDemo-Bold.ttf');
+        }
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* меню чётко по центру */
+    align-items: center;
+    padding: 20px 60px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 120px;
+}
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Font1', sans-serif;
+            background: url('IMG/your-background.jpg') no-repeat;
+            height: 1000px;
+        }
+
+a.text {
+  text-decoration: none;
+  color: #000000;
+  font-size: 24px;          /* <-- размер текста */
+}
+
+.logo {
+    position: absolute;
+    left: 60px;        /* регулируешь положение по макету */
+    top: 20px;
+    height: 120px;
+    width: 135px;
+    z-index: 20;
+}
+
+.qwer {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24.5px;
+    padding-bottom: 15.5px;
+    display: flex;
+    justify-content: center; /* меню чётко по центру */
+    padding: 20px 60px;
+    height: 80px;
+    text-decoration: none;
+      position: relative;
+  z-index: 30;
+}
+
+
+
+
+ 
+
+.hero {
+    position: relative;      /* если нужен top */
+    color: #b33c00; 
+    justify-content: center;
+    display: flex;
+    top: -150px; /* высота Y = 166 */
+    margin: 0;
+    padding: 0;
+} 
+    .hero h1 {
+            font-size: 128px;  
+            font-family: 'Font2';
+            letter-spacing: -5px;
+    }
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -250px; /* высота Y = 166 */
+}
+
+        .animals-line {
+            width: 100%;                 /* на всю ширину страницы */
+            display: flex;
+            justify-content: space-between;   /* ← ГЕПАРД ВЛЕВО — СЛОН ВПРАВО */
+            align-items: flex-end;           /* выравнивание по нижней линии */
+            padding: 0;                 /* отступы от краёв */
+            position: relative;
+            top: -550px;     
+            pointer-events: none; /* клики проходят сквозь блок */
+        }
+
+
+        /* стандартное изображение */
+        .animal img {
+            width: 300px;
+        }
+
+        .animal img {
+    height: 450px;   /* ← регулируешь тут */
+    object-fit: contain;
+}
+
+
+        /* наведенная версия */
+        .animal img.hover {
+            display: none;
+        }
+
+        .animal:hover img.default {
+            display: none;
+        }
+        .animal:hover img.hover {
+            display: block;
+        }
+
+        .cheetah img {
+    width: 318px;
+    height: 221px;
+    object-fit: contain;
+    pointer-events: auto; /* вернуть клики только для животных */
+}
+
+.elephant img {
+    width: 276px;
+    height: 408px;
+    object-fit: contain;
+    pointer-events: auto;
+}
+
+
+.zakaz {
+    display: flex;
+    justify-content: center; /* горизонтальное центрирование */
+    position: relative;
+    top: -680px; /* увеличиваем отрицательное значение, чтобы поднять выше */
+    margin: 0 auto; /* для дополнительного центрирования */
+}
+
+
+        .safari-btn {
+            display: inline-block;
+            padding: 20px 60px;
+            font-size: 36px;
+            border: 3px solid #FFE8B1;
+            border-radius: 20px;
+            margin: 60px auto;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: 'Font1';
+            text-decoration: none;
+            font-size: 64px;          /* <-- размер текста */
+            color: #FFE8B1;
+        }
+        .safari-btn:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+
+footer {
+    text-align: center;
+
+     background-image:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(53, 35, 19, 1)),
+        url('IMG/footer.png');
+    background-size: cover; /* изображение занимает весь фон футера */
+    background-position: center; /* центрируем картинку */
+    background-repeat: no-repeat; /* не повторять изображение */
+    color: #CAAA6E;
+    font-family: 'Font2';
+    display: flex;
+    justify-content: center; /* горизонтальное центрирование */
+    position: relative;
+    top: -700px; /* увеличиваем отрицательное значение, чтобы поднять выше */
+    font-size: 16px;
+    flex-flow: row nowrap;
+
+    align-items: center;
+    gap: 34px; /* расстояние между элементами */
+   
+    height: 72px;
+    text-decoration: none;
+}
+
+
+/* Контейнер страницы контактов */
+.contacts-wrapper {
+    position: relative;
+    top: -200px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Карточка с контактами */
+.contact-card {
+    width: 750px;
+    padding: 40px 50px;
+    background: rgba(255, 232, 177, 0.12);
+    backdrop-filter: blur(3px);
+    border: 2px solid #FFE8B1;
+    border-radius: 30px;
+    color: #FFE8B1;
+    font-family: 'Font1';
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+.contact-card h2 {
+    font-family: 'Font2';
+    font-size: 42px;
+    color: #ffce8a;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-link {
+    color: #FFE8B1;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 28px;
+}
+
+.contact-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px #fff5d6;
+}

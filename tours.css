@@ -1,0 +1,164 @@
+       
+       @font-face {
+            font-family: 'Font1';
+            src: url('fonts/kankin.ttf');
+        }
+        @font-face {
+            font-family: 'Font2';
+            src: url('fonts/NexaDemo-Bold.ttf');
+        }
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* меню чётко по центру */
+    align-items: center;
+    padding: 20px 60px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 120px;
+}
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Font1', sans-serif;
+            background: url('IMG/your-background.jpg') no-repeat;
+            height: 1000px;
+        }
+
+a.text {
+  text-decoration: none;
+  color: #000000;
+  font-size: 24px;          /* <-- размер текста */
+}
+
+.logo {
+    position: absolute;
+    left: 60px;        /* регулируешь положение по макету */
+    top: 20px;
+    height: 120px;
+    width: 135px;
+    z-index: 20;
+}
+
+.qwer {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24.5px;
+    padding-bottom: 15.5px;
+    display: flex;
+    justify-content: center; /* меню чётко по центру */
+    padding: 20px 60px;
+    height: 80px;
+    text-decoration: none;
+      position: relative;
+  z-index: 30;
+}
+.hero {
+    position: relative;      /* если нужен top */
+    color: #b33c00; 
+    justify-content: center;
+    display: flex;
+    top: -150px; /* высота Y = 166 */
+    margin: 0;
+    padding: 0;
+} 
+    .hero h1 {
+            font-size: 128px;  
+            font-family: 'Font2';
+            letter-spacing: -5px;
+    }
+
+/* ЗАГОЛОВОК */
+.tours-title {
+    position: relative;      /* если нужен top */
+    color: #b33c00; 
+    justify-content: center;
+    display: flex;
+    top: -150px; /* высота Y = 166 */
+    margin: 0;
+    padding: 0;
+}
+
+.tours-title h1 {
+    font-size: 128px;
+    font-family: 'Font2';
+    letter-spacing: -5px;
+    color: #b33c00;
+}
+
+/* КАРТОЧКИ ТУРОВ */
+.tours-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;      /* если нужен top */
+    top: -190px; /* высота Y = 166 */
+}
+
+
+
+.tour-card {
+    width: 32%;
+    background: rgba(255, 255, 255, 0.45);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    border: 3px solid #f0d7a4;
+    font-family: 'Font2';
+}
+
+.tour-card h2 {
+    font-size: 36px;
+    font-family: 'Font1';
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.tour-card p {
+    font-size: 20px;
+    margin-bottom: 25px;
+    line-height: 1.45;
+}
+
+.tour-btn {
+    display: inline-block;
+    padding: 16px 36px;
+    font-size: 28px;
+    border: 3px solid #FFE8B1;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #5a3b1a;
+    background: rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+}
+
+.tour-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* ФУТЕР */
+footer {
+    margin-top: 100px;
+    background-image:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(53, 35, 19, 1)),
+        url('IMG/footer.png');
+
+    background-size: cover;
+    background-position: center;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+    color: #CAAA6E;
+    font-family: 'Font2';
+    font-size: 16px;
+}

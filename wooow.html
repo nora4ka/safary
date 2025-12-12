@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Голос Саванны — Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scrp.js"></script>  
+</head>
+
+<body>
+
+<div>
+    <img src="IMG/my-logo.png" class="logo" alt="logo">
+    <div class="qwer">
+        <a href="wooow.html" class="text">Главная</a>
+        <a href="tours.html" class="text">Туры</a>
+        <a href="contacts.html" class="text">Контакты</a>
+    </div>
+</div>
+
+<div class="hero">
+    <h1>Голос Саванны</h1>
+</div>
+
+<div class="container">
+    <div class="video">
+      <video src="VIDEO/your-video.mp4" width="962" height="516" controls autoplay muted loop></video>
+    </div>
+</div>
+
+<div class="animals-line">
+    <div class="animal cheetah" onclick="playSound('cheetah-sound')">
+        <img src="IMG/cheetah.png" class="default" />
+        <img src="IMG/cheetah-outline.png" class="hover" />
+        <audio id="cheetah-sound" src="SOUNDS/cheetah.mp3"></audio>
+    </div>
+
+    <div class="animal elephant" onclick="playSound('elephant-sound')">
+        <img src="IMG/elephant.png" class="default" />
+        <img src="IMG/elephant-outline.png" class="hover" />
+        <audio id="elephant-sound" src="SOUNDS/elephant.mp3"></audio>
+    </div>
+</div>
+
+
+<div style="text-align:center;" class="zakaz">
+    <a href="tours.html" class="safari-btn">Заказать сафари</a>
+</div>
+
+<footer>
+    <h5>+7 (999) 649-99-31 </h5> 
+    <h5> г. Москва, ул. Красная, д 6, стр 1</h5> 
+    <h5>golos.safari@mail.ru</h5>        
+</footer>
+
+</body>
+</html>
